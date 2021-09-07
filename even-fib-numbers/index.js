@@ -13,7 +13,6 @@ function sumFib(n) {
   let result = 0;
   for (let i = 1; i <= n; i++) {
     let number = fib(i);
-    console.log(number)
     if (number % 2 === 0) {
       result += number;
     }
@@ -40,7 +39,6 @@ function fib(n) {
 
 fib = memoize(fib);
 const total = sumFib(33)
-console.log(fib(33))
 console.log(total)
 
 /**
